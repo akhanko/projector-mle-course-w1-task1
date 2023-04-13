@@ -22,4 +22,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag akhanko/projector_task:$(date +%s)
     - name: Docker push
-      run: docker push ${{secrets.DOCKER_USERNAME}}/projector_task
+      run: docker push akhanko/projector_task
